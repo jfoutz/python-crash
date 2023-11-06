@@ -1,6 +1,6 @@
 This is not an interesting repo.
 
-It's just cranking through https://ehmatthes.github.io/pcc_3e/
+It's just cranking through https://ehmatthes.github.io/pcc_3e/ (well the physical book). but i think it's the same stuff.
 
 And that's fine. Haven't used python seriously in long long time, fun to  refresh python syntax and fucntions, learning some odds and ends the python3 way. It's also a great excuse to figure out nix dev envs + direnv + lsp + black + flake8. All the things. 
 
