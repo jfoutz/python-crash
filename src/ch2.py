@@ -7,11 +7,6 @@ def ch2_1() -> int:
     return message
 
 
-def test_ch2_1() -> None:
-    """get a message"""
-    assert ch2_1() == 'Hello'
-
-
 def ch2_2() -> str:
     """assign a var, print it, assign again and print again. hmm.
        we're just goint to assign twice."""
@@ -20,16 +15,8 @@ def ch2_2() -> str:
     return message
 
 
-def test_ch2_2() -> None:
-    assert ch2_2() == "New Hello"
-
-
 def ch2_3(name: str) -> str:
     return f"Hello {name}"
-
-
-def test_ch2_3() -> None:
-    assert ch2_3('jason') == "Hello jason"
 
 
 def ch2_4(name: str) -> List[str]:
@@ -40,5 +27,3 @@ def ch2_4(name: str) -> List[str]:
     return names
 
 
-def test_ch2_4() -> None:
-    assert ch2_4('jason') == ['Jason', 'jason', 'JASON']
