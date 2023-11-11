@@ -42,6 +42,15 @@
                 python-lsp-server
               ]))
             ];
+            shellHook = ''
+            if [ -d "v-env" ]; then
+              echo "Skipping venv creation, 'v-env' already exists"
+            else
+              echo "Creating new venv environment in path: 'v-env'"
+              python -m venv "v-env"
+            fi
+            source "v-env/bin/activate"
+            '';
           };
       });
     };
