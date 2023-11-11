@@ -4,6 +4,7 @@
 *.log
 tmp/
 v-env
+src/chapters.egg-info/
 
 *.py[cod]
 *.egg
