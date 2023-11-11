@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from chapters.ch2 import ch2_1, ch2_2, ch2_3, ch2_4
 
 
 def test_ch2_1() -> None:
