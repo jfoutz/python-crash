@@ -39,6 +39,7 @@
                 pip # The pip installer
                 black
                 flake8
+                mypy
                 python-lsp-server
               ]))
             ];
