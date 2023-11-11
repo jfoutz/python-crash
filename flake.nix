@@ -50,6 +50,7 @@
               python -m venv "v-env"
             fi
             source "v-env/bin/activate"
+            pip install -r ./requirements.txt
             '';
           };
       });
