@@ -26,3 +26,24 @@ def test_ex5() -> None:
                          'Hi Sam Jones, please come to dinner\n'
                          'Hi Joe Dirt, please come to dinner\n'
                          'Hi Mom, please come to dinner\n')
+
+
+def test_ex6() -> None:
+    assert ch3.ex6() == ('We got a bigger table.\n'
+                         'Hi Mom, please come to dinner\n'
+                         'Hi Bob Smith, please come to dinner\n'
+                         'Hi Dad, please come to dinner\n'
+                         'Hi Sam Jones, please come to dinner\n'
+                         'Hi Joe Dirt, please come to dinner\n'
+                         'Hi Other, please come to dinner\n')
+
+
+def test_ex7() -> None:
+    assert ch3.ex7() == ("We can only invite 2 people.\n"
+                         'Sorry Other we don\'t have space.\n'
+                         'Sorry Joe Dirt we don\'t have space.\n'
+                         'Sorry Sam Jones we don\'t have space.\n'
+                         'Sorry Dad we don\'t have space.\n'
+                         'Hi Mom, please come to dinner\n'
+                         'Hi Bob Smith, please come to dinner\n'
+                         '[]\n')

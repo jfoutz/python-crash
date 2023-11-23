@@ -4,6 +4,7 @@
   # Flake inputs
   inputs = {
     nixpkgs.url = "https://flakehub.com/f/NixOS/nixpkgs/0.2305.491812.tar.gz";
+    #nixpkgs.url = "nixpkgs/nixos-unstable";
   };
 
   # Flake outputs
@@ -27,8 +28,8 @@
       devShells = forAllSystems ({ pkgs }: {
         default =
           let
-            # Use Python 3.11
-            python = pkgs.python311;
+            # Use Python 3.10
+            python = pkgs.python310;
           in
           pkgs.mkShell {
             # The Nix packages provided in the environment
@@ -41,18 +42,21 @@
                 flake8
                 mypy
                 python-lsp-server
+		pytest
+                tkinter
               ]))
             ];
-            shellHook = ''
-            if [ -d "v-env" ]; then
-              echo "Skipping venv creation, 'v-env' already exists"
-            else
-              echo "Creating new venv environment in path: 'v-env'"
-              python -m venv "v-env"
-            fi
-            source "v-env/bin/activate"
-            pip install -r ./requirements.txt
-            '';
+#            shellHook = ''
+#            if [ -d "v-env" ]; then
+#              echo "Skipping venv creation, 'v-env' already exists"
+#            else
+#              echo "Creating new venv environment in path: 'v-env'"
+#              sleep 1
+#              python -m venv "v-env"
+#            fi
+#            source "v-env/bin/activate"
+#            pip install -r ./requirements.txt
+#            '';
           };
       });
     };
